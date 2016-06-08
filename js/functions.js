@@ -9,10 +9,10 @@ $(document).ready(function(){
         var featureTop = $(".featureSection").offset().top;
 
         if(wScroll>introTop-$(this).height()/1.2){
-            $(".introText").addClass("isShowing");
+            $(".introTextMain").addClass("isShowing");
             //console.log("haha");
         }else{
-            $(".introText").removeClass("isShowing");
+            $(".introTextMain").removeClass("isShowing");
         }
 
 
