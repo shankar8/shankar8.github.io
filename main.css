@@ -114,10 +114,13 @@ Feature section
     height:100vh;
     background: lightblue;
     padding: 50px 30px;
+    position:relative;
 }
 
 .featureTextMain,.featureTextOne,.featureTextTwo,.featureTextThree,.featureTextFour{
     font-size: 18px;
+    position:absolute;
+    top:0;
     opacity:0;
     transition: all 0.3s ease-in-out;
 }
