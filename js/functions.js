@@ -112,6 +112,31 @@ $(".featureFour").click(function(){
     
     
     
+    $(window).scroll(function(){
+	
+	 //to arrange icons 
+	  var wScroll = $(this).scrollTop(),
+	  wContact = $(".contactSection").offset().top,
+	  wFooter = $(".footerSection").offset().top;
+	  
+		if(wScroll> wContact - $(window).height()){
+	  		$(".iconSetOne, .iconSetTwo").addClass("moveIt");      
+	  }else{
+	  		$(".iconSetOne, .iconSetTwo").removeClass("moveIt");      
+	  }
+	     
+	 
+	 //to make the icons sit
+	  if(wScroll > wFooter - $(window).height()){
+	  		console.log("hahaha")
+	  		$(".socialBox").addClass("sit");
+	  }else{
+	  		$(".socialBox").removeClass("sit");
+	  }
+	  
+	
+    });
+	    
     
     
     
