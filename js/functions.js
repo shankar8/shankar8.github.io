@@ -2,8 +2,9 @@
 
 $(document).ready(function(){
 
+ 
+ //intro Section fade In animation
     $(window).scroll(function(){
-
         var wScroll = $(this).scrollTop();
         var introTop = $(".introSection").offset().top;
         var featureTop = $(".featureSection").offset().top;
@@ -16,17 +17,13 @@ $(document).ready(function(){
         }
 
 
-        
-
-
-
-
-
-
     });
     
     
     
+    
+
+// feature section animation on hover
 $(".featureOne").hover(function() {
       console.log("hahah");
       $(".featureTextMain").removeClass("showText");
@@ -71,9 +68,8 @@ $(".featureFour").hover(function() {
     
     
     
-    
-    
-    
+
+//Tile scale on hover
 $(".featureOne").click(function(){
 	$(".featureOneColor").toggleClass("scale");	
 });
