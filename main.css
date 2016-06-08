@@ -213,8 +213,89 @@ Contact Section
 
 
 /*------------------------------------------------------------------------------------
-Menu section
+Social Media section
 ------------------------------------------------------------------------------------*/
+
+
+
+
+.contactSection{
+  position: relative;
+}
+
+.socialBox{
+  display:inline-block;
+  height:40px;
+  width:200px;
+  margin-bottom:10px;
+  background:purple;
+  position: fixed;
+  z-index:100;
+  bottom:0px;
+  left:10px;
+}
+
+.socialBox.sit{
+  position: absolute;
+}
+
+.icon{
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin: 10px;
+  }
+
+.socialOne{
+  background:teal;  
+  /*top:0;
+  left:0;*/
+}
+
+.socialTwo{
+  background:green;
+  /*top:0;
+  left:50px;*/
+}
+
+.socialThree{
+  background:blue;
+ /* top:0;
+  left:100px;*/
+}
+
+.socialFour{
+  background:magenta;
+  /*top:0;
+  left:150px;*/
+}
+
+.iconSetOne{
+  display: inline-block;
+  tranform: translateY(0px);
+  transition: all 0.9s ease;
+}
+
+.iconSetTwo{
+  display: inline-block;
+  tranform: translateX(0px);
+  transition: all 0.9s ease;
+}
+
+.iconSetOne.moveIt{
+  transform: translateY(-50px);
+}
+
+.iconSetTwo.moveIt{
+  transform: translateX(-87px);
+}
+
+
+
+
+
+
+
 
 
 
