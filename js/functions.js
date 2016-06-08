@@ -74,6 +74,25 @@ $(".featureFour").hover(function() {
     
     
     
+$(".featureOne").click(function(){
+	$(".featureOneColor").toggleClass("scale");	
+});
+
+$(".featureTwo").click(function(){
+	$(".featureTwoColor").toggleClass("scale");	
+});
+
+$(".featureThree").click(function(){
+	$(".featureThreeColor").toggleClass("scale");	
+});
+
+$(".featureFour").click(function(){
+	$(".featureFourColor").toggleClass("scale");	
+});
+    
+    
+    
+    
     
     
     
