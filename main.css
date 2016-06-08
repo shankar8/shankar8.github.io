@@ -241,3 +241,26 @@ Footer section
     background: #202020;
     color:white;
 }
+
+/*------------------------------------------------------------------------------------
+Scroll to Top Button
+------------------------------------------------------------------------------------*/
+
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: pink;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	}
+  
+.scrollToTop:hover{
+	text-decoration:none;
+}
