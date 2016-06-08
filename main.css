@@ -143,23 +143,43 @@ Feature section
     display: block;
     width:100%;
     height:50vh;
+    border:5px solid black;
     }
 
-.featureOne{
-    background: yellow;
+.featureOneColor{
+  width:100%;
+  height:100%;
+  background: yellow;
+  transform-origin: top left;
 }
 
-.featureTwo{
-    background: orange;
+.featureTwoColor{
+  background: orange;
+  width:100%;
+  height:100%;
+  transform-origin: top right;
 }
 
-.featureThree{
-    background: green;
+.featureThreeColor{
+  background: green;
+  width:100%;
+  height:100%;
+  transform-origin: bottom left;
 }
 
-.featureFour{
-    background: blue;
+.featureFourColor{
+  background: blue;
+  width:100%;
+  height:100%;
+  transform-origin: bottom right;
 }
+
+.featureOneColor.scale,.featureTwoColor.scale,
+.featureThreeColor.scale,.featureFourColor.scale{
+  transform:scale(2.05,2.05);
+}
+
+
 
 
 /*------------------------------------------------------------------------------------
