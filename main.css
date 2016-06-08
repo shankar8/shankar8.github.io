@@ -173,7 +173,7 @@ Feature section
 
 .featureOneColor.scale,.featureTwoColor.scale,
 .featureThreeColor.scale,.featureFourColor.scale{
-  transform:scale(2.05,2.05);
+  transform:scale(2.0,2.0);
 }
 
 
