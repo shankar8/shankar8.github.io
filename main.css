@@ -52,6 +52,12 @@ Header section
 ------------------------------------------------------------------------------------*/
 
 
+/*------------------------------------------------------------------------------------
+SideBar Section section
+------------------------------------------------------------------------------------*/
+
+
+
 
 
 /*------------------------------------------------------------------------------------
@@ -248,7 +254,7 @@ Social Media section
   }
 
 .socialOne{
-  background:teal;  
+  background:teal;
 }
 
 .socialTwo{
@@ -321,10 +327,10 @@ Scroll to Top Button
 ------------------------------------------------------------------------------------*/
 
 .scrollToTop{
-	width:100px; 
+	width:100px;
 	height:100px;
-	padding:10px; 
-	text-align:center; 
+	padding:10px;
+	text-align:center;
 	background: pink;
 	font-weight: bold;
 	color: #444;
@@ -334,7 +340,7 @@ Scroll to Top Button
 	right:40px;
 	display:none;
 	}
-  
+
 .scrollToTop:hover{
 	text-decoration:none;
 }
