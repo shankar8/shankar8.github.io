@@ -340,7 +340,7 @@ Social Media section
   width:200px;
   margin-bottom:10px;
   background:purple;
-  -webkit-transform: translateZ(0);
+  /*-webkit-transform: translateZ(0);*/                      /*remove this*/
   position: fixed;
   z-index:100;
   bottom:0px;
