@@ -41,20 +41,102 @@ h2.hideHeader{
 }
 
 
-
 /*------------------------------------------------------------------------------
 Loading Section
 ------------------------------------------------------------------------------*/
+
+
+
 
 
 /*------------------------------------------------------------------------------------
 Header section
 ------------------------------------------------------------------------------------*/
 
+.headerBar{
+      display:block;
+      width:100%;
+      height:60px;
+      background: #777;
+      position:fixed;
+      z-index:11;
+}
+
+.headerBar h1{
+      display: none;
+}
+
+.logo{
+      display: block;
+      width:200px;
+      height:40px;
+      margin:10px 20px;
+      background: lightpink;
+}
+
+/*navigation button takes you to contact form */
+.navButton{
+      position:absolute;
+      top:0;
+      right:0;
+      padding:10px 20px;
+      font-size: 2em;
+      color: pink;
+}
+
+
+
 
 /*------------------------------------------------------------------------------------
-Navigation SideBar Section section
+Navigation/Menu Modal window Section
 ------------------------------------------------------------------------------------*/
+
+.overlayNav{
+      position:fixed;
+      background: green;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      opacity:0.5;
+      z-index: 12;
+      text-align: center;
+      opacity:0;
+      pointer-events: none;
+      transition: all 0.5s;
+}
+
+.overlayNav.showOverlayNav{
+      opacity:1;
+      pointer-events:auto;
+}
+
+#nav{
+      margin:0 auto;
+      margin-top:150px;
+      max-width:600px;
+      max-height: 500px;
+      background: skyblue;
+      position:relative;
+      transform: translateY(-30px);
+      transition: all 0.3s ease-in-out;
+}
+
+#nav.showNav{
+      transform: translateY(0px);
+}
+
+.closeNav{
+      position:absolute;
+      top:-35px;
+      right:-20px;
+      font-size:2em;
+}
+
+
+
+
+
 
 
 
@@ -63,100 +145,6 @@ Main Styles
 ------------------------------------------------------------------------*/
 
 
-/* Hide nav handler checkbox */
-#navToggle{
-  display: none;
-}
-
-
-/* Header menu button */
-label#navButton {
-	position:fixed;
-  top:0;
-  right:0;
-	padding:10px;
-  line-height: 0.6;
-	font-size: 2em;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-	z-index: 3;
-}
-
-/* Header active menu button */
-#navToggle:checked + label#navButton{
-	color: blue;
-	right:300px;
-}
-
-/* Slide out navigation */
-#nav {
-	position: fixed;
-	text-align: center;
-	top: 0;
-	right: 0;
-	width: 300px;
-	height: 100%;
-	z-index: 1;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	transition: opacity 0s .25s;
-	-moz-transition: opacity 0s .25s;
-	-webkit-transition: opacity 0s .25s;
-	background: #bbb;
-}
-
-/* Active slide out navigation */
-#navToggle:checked ~ nav#nav {
-	background: lightblue;
-	opacity: 1;  /* 完全不透明 */
-	transition: opacity 0s 0s;
-	-moz-transition: opacity 0s 0s;
-	-webkit-transition: opacity 0s 0s;
-}
-
-/* Slide out navigation list items */
-#nav ul li {
-	display: block;
-	clear: both;
-}
-
-#nav ul li a {
-	display: block;
-	width: 100%;
-	height: 100%;
-}
-
-.pageContent {
-	display: block;
-	position: relative;
-	height: 100%;
-	transform: translate3D(0, 0, 0);
-	-moz-transform: translate3D(0, 0, 0);
-	-webkit-transform: translate3D(0, 0, 0);
-	transition: -transform .25s ease-in-out;
-	-moztransition: -moz-transform .25s ease-in-out;
-	transition: -webkit-transform .25s ease-in-out;
-	z-index: 2;
-}
-
-#navToggle:checked ~ .pageContent {
-	transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
-	-moz-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
-	-webkit-transform: translate3D(-300px, 0, 0);  /* X value must be same as Nav width */
-}
-
-#content-container {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 75px 0 0 0; /* Top padding must be same as header height*/
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
-	background: #fff;
-	z-index: -1;
-}
 
 
 
@@ -321,6 +309,51 @@ Contact Section
 
 
 
+/*------------------------------------------------------------------------------------
+Contact One Section
+------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------------------
+Contact Two Section
+------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------------------------------
+Contact Three Section
+------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------
+Contact Four Section
+------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*contact button takes you to contact form */
+.contactButton{
+      font-size: 2em;
+      color: pink;
+      padding: 30px;
+}
+
+
+
+
 
 
 /*------------------------------------------------------------------------------------
@@ -340,9 +373,9 @@ Social Media section
   width:200px;
   margin-bottom:10px;
   background:purple;
-  /*-webkit-transform: translateZ(0);*/                      /*remove this*/
+   /* seems to do the same in Safari Family of Browsers*/                 /*remove this*/
   position: fixed;
-  z-index:100;
+  z-index:10;
   bottom:0px;
   left:10px;
 }
@@ -405,8 +438,50 @@ Social Media section
 
 
 /*------------------------------------------------------------------------------------
-Contact section
+Contact Modal section
 ------------------------------------------------------------------------------------*/
+
+.overlayContact{
+      position:fixed;
+      background: yellow;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      opacity:0.5;
+      z-index: 12;
+      text-align: center;
+      opacity:0;
+      pointer-events: none;
+      transition: all 0.5s;
+}
+
+.overlayContact.showOverlayContact{
+      opacity:1;
+      pointer-events:auto;
+}
+
+.contactModal{
+      margin:0 auto;
+      margin-top:150px;
+      max-width:600px;
+      max-height: 500px;
+      background: skyblue;
+      position:relative;
+      transform: translateY(-30px);
+      transition: all 0.3s ease-in-out;
+}
+
+.contactModal.showContactForm{
+      transform: translateY(0px);
+}
+
+.closeContact{
+      position:absolute;
+      top:-35px;
+      right:-20px;
+      font-size:2em;
+}
 
 
 

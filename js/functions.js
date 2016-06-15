@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
- 
+
  //intro Section fade In animation
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
@@ -18,10 +18,10 @@ $(document).ready(function(){
 
 
     });
-    
-    
-    
-    
+
+
+
+
 
 // feature section animation on hover
 $(".featureOne").hover(function() {
@@ -63,30 +63,30 @@ $(".featureFour").hover(function() {
       $(".featureTextMain").addClass("showText");
       $(".featureTextFour").removeClass("showText");
     });
-    
-    
-    
-    
-    
+
+
+
+
+
 
 //Tile scale on hover
 $(".featureOne").click(function(){
-	$(".featureOneColor").toggleClass("scale");	
+	$(".featureOneColor").toggleClass("scale");
 });
 
 $(".featureTwo").click(function(){
-	$(".featureTwoColor").toggleClass("scale");	
+	$(".featureTwoColor").toggleClass("scale");
 });
 
 $(".featureThree").click(function(){
-	$(".featureThreeColor").toggleClass("scale");	
+	$(".featureThreeColor").toggleClass("scale");
 });
 
 $(".featureFour").click(function(){
-	$(".featureFourColor").toggleClass("scale");	
+	$(".featureFourColor").toggleClass("scale");
 });
-    
-    
+
+
 
 
 
@@ -101,31 +101,31 @@ $(".featureFour").click(function(){
 			$('.scrollToTop').fadeOut();
 		}
 	});
-	
+
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
 		$('html, body').animate({scrollTop : 0},800);
 		return false;
-	});    
-    
-    
-    
-    
-    
+	});
+
+
+
+
+
     $(window).scroll(function(){
-	
-	 //to arrange icons 
+
+	 //to arrange icons
 	  var wScroll = $(this).scrollTop(),
 	  wContact = $(".contactSection").offset().top,
 	  wFooter = $(".footerSection").offset().top;
-	  
+
 		if(wScroll> wContact - $(window).height()){
-	  		$(".iconSetOne, .iconSetTwo").addClass("moveIt");      
+	  		$(".iconSetOne, .iconSetTwo").addClass("moveIt");
 	  }else{
-	  		$(".iconSetOne, .iconSetTwo").removeClass("moveIt");      
+	  		$(".iconSetOne, .iconSetTwo").removeClass("moveIt");
 	  }
-	     
-	 
+
+
 	 //to make the icons sit
 	  if(wScroll > wFooter - $(window).height()){
 	  		console.log("hahaha")
@@ -133,19 +133,68 @@ $(".featureFour").click(function(){
 	  }else{
 	  		$(".socialBox").removeClass("sit");
 	  }
-	  
-	
+
+
     });
-	    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------
+// Nav slider fix
+//---------------------------------------------------------------------------------------------
+
+$("#navButton").click(function(){
+      $(".pageContent").toggleClass("pageContentMove");
+      console.log("hahaha");
+});
+
+
+//---------------------------------------------------------------------------------------------
+// contact Modal
+//---------------------------------------------------------------------------------------------
+
+$(".contactButton").click(function(){
+      $(".overlayContact").addClass("showOverlayContact");
+      $(".contactModal").addClass("showContactForm");
+});
+
+
+$(".closeContact").click(function(){
+      $(".overlayContact").removeClass("showOverlayContact");
+      $(".contactModal").removeClass("showContactForm");
+});
+
+
+
+
+
+//---------------------------------------------------------------------------------------------
+// Navigation Modal
+//---------------------------------------------------------------------------------------------
+
+$(".navButton").click(function(){
+      $(".overlayNav").addClass("showOverlayNav");
+      $("#nav").addClass("showNav");
+});
+
+
+$(".closeNav").click(function(){
+      $(".overlayNav").removeClass("showOverlayNav");
+      $("#nav").removeClass("showNav");
+});
+
+
+
+
+
+
+
+
+
 
 
 
