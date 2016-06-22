@@ -5,15 +5,17 @@
 <title>Advent Test</title>
 <link type="text/css" rel="stylesheet" href="normalize.css"/>
 <link type="text/css" rel="stylesheet" href="skeleton.css"/>
+<link type="text/css" rel="stylesheet" href="css/ionicons.css"/>
 <link type="text/css" rel="stylesheet" href="main.css"/>
+<link type="text/css" rel="stylesheet" href="css/main New.css"/>
 </head>
 
 <body>
 
       <header class="headerBar">
             <h1>Advent Global Solutions</h1>
-            <a href="" class="logo">Advent Global Solutions</a>
-            <div class="navButton">≡</div>
+            <a href="index.html" class="logo">Advent Global Solutions</a>
+            <div class="navButton"><i class="ion-navicon"></i></div>
       </header><!--end Header-->
 
       <section class="heroSection">
@@ -38,8 +40,11 @@
                               making this the first true generator on the Internet.
                           </p>
                       </div>
+                      <div class="aboutUsButton"><a href="aboutUs.html" target="_blank">Know more About Us</a></div>
               </div>
-              <div class="introBox introImageBox six columns">intro image</div>
+              <div class="introBox introImageBox six columns">
+                    <div class="introImage"></div>
+              </div>
           </div>
       </section>
 
@@ -50,7 +55,7 @@
                       <div class="featureTextMain">
                           <h3>Main Feature</h3>
                           <p>
-                              Main feature--There are many variations of passages of Lorem Ipsum available,
+                              Main feature----There are many variations of passages of Lorem Ipsum available,
                               but the majority have suffered alteration in some form, by
                               injected humour, or randomised words which don't look even
                               slightly believable. If you are going to use a passage of Lorem
@@ -63,7 +68,7 @@
                       <div class="featureTextOne">
                           <h3>Feature One</h3>
                           <p>
-                              One---There are many variations of passages of Lorem Ipsum available,
+                              One----There are many variations of passages of Lorem Ipsum available,
                               but the majority have suffered alteration in some form, by
                               injected humour, or randomised words which don't look even
                               slightly believable. If you are going to use a passage of Lorem
@@ -76,7 +81,7 @@
                       <div class="featureTextTwo">
                           <h3>Feature Two</h3>
                           <p>
-                              Two---There are many variations of passages of Lorem Ipsum available,
+                              Two----There are many variations of passages of Lorem Ipsum available,
                               but the majority have suffered alteration in some form, by
                               injected humour, or randomised words which don't look even
                               slightly believable. If you are going to use a passage of Lorem
@@ -89,7 +94,7 @@
                       <div class="featureTextThree">
                           <h3>Feature Three</h3>
                           <p>
-                              Three---There are many variations of passages of Lorem Ipsum available,
+                              Three----There are many variations of passages of Lorem Ipsum available,
                               but the majority have suffered alteration in some form, by
                               injected humour, or randomised words which don't look even
                               slightly believable. If you are going to use a passage of Lorem
@@ -144,35 +149,46 @@
       <section class="contactSection container">
           <h2 class="hideHeader">Contact Section</h2>
           <div class="row">
-              <div class="contactOne contactBox three columns">Contact 1</div>
-              <div class="contactTwo contactBox three columns">
-                   <form action="#" id="contactForm" method="post">
-                          <input type="text" id="name" name="name" placeholder="Name" value="">
-                          <input type="email" id="email" name="email" placeholder="Email" value="">
-                          <input type="submit" value="Submit">
-                   </form>
+              <div class="contactOne contactBox three columns">
+                        <h3>Community</h3>
+                        <p>Join our family and be part of our adventure</p>
               </div>
-              <div class="contactThree contactBox three columns">Contact 3</div>
+              <div class="contactTwo contactBox three columns">
+                        <h3>NewsLetter</h3>
+                        <p>Sign-up for news and offers</p>
+                        <form action="#" id="contactForm" method="post">
+                              <input type="text" id="name" name="name" placeholder="Name" value="">
+                              <input type="email" id="email" name="email" placeholder="Email" value="">
+                              <div class="newsButton">✡</div>                                            <!--change this-->
+                        </form>
+              </div>
+              <div class="contactThree contactBox three columns">
+                              <h3>Dealers</h3>
+                              <p>Find a store near your place..</p>
+                              <div class="dealerButton">★</div>
+              </div>
               <div class="contactFour contactBox three columns">
-                          <div class="contactButton">❤</div>
+                              <h3>Contact</h3>
+                              <p>Send Us your comments and questions</p>
+                              <div class="contactButton">❤</div>
               </div>
           </div>
           <!-- social box original position-->
           <div class="socialBox">
                           <div class="iconSetOne">
-                              <div class="icon socialOne"></div>
-                              <div class="icon socialTwo"></div>
+                              <div class="icon socialOne"><i class="ion-social-facebook"></i></div>
+                              <div class="icon socialTwo"><i class="ion-social-instagram-outline"></i></div>
                           </div>
                           <div class="iconSetTwo">
-                              <div class="icon socialThree"></div>
-                              <div class="icon socialFour"></div>
+                              <div class="icon socialThree"><i class="ion-social-twitter"></i></div>
+                              <div class="icon socialFour"><i class="ion-social-youtube"></i></div>
                           </div>
           </div>
       </section>
 
       <footer class="footerSection container">
           footer stuff
-          <a href="#" class="scrollToTop">Scroll To Top</a>
+          <a href="#" class="scrollToTop"><i class="ion-chevron-up"></i></a>
       </footer>
 
 
@@ -186,13 +202,58 @@
       <nav id="nav">
             <div class="closeNav">×</div>
             <ul>
-                  <li class="item1"><a href="">Item1</a></li>
-                  <li class="item2"><a href="">Item2</a></li>
-                  <li class="item3"><a href="">Item3</a></li>
-                  <li class="item4"><a href="">Item4</a></li>
-                  <li class="item5"><a href="">Item5</a></li>
+                  <li class="item1"><a href="">Home</a></li>
+                  <li class="item2"><a href="">About Us</a></li>
+                  <li class="item3"><a href="">Dealers</a></li>
+                  <li class="item4"><a href="">Contact</a></li>
             </ul>
       </nav>
+</div>
+
+
+
+<!-- Dealers Modal Window -->
+
+<div class="overlayDealer">
+      <div class="dealerModal">
+            <div class="closeDealer">×</div>
+            <h2 class="dealerHeader">Dealers</h2>
+            <div class="dealer row">
+                  <div class="dealerBox dealer1 six columns">
+                        <h3>Durga Cycles</h3>
+                        <p>
+                              A 3/316, Chaudhary Balbir Singh Marg, Paschim Vihar,
+                              Delhi - 110063, Opposite Petrol Pump,
+                              Near Jwala Hari Market
+                              +(91)-11- 33724866
+                        </p>
+                  </div>
+                  <div class="dealerBox dealer2 six columns">
+                        <h3>The Bike Shop</h3>
+                        <p>
+                              46/3,Yusuf Sarai Market, Main Road, Yusuf Sarai-Green Park,
+                              Delhi - 110016, Near Green Park
+                              Metro Station
+                              +(91)-11- 33743192
+                        </p>
+                  </div>
+                  <div class="dealerBox dealer3 six columns">
+                        <h3>Mehta Industries</h3>
+                        <p>
+                              78-A Jhandewalan cycle market, Phase-1, New Delhi-110055
+                              +91 9810439506
+                        </p>
+                  </div>
+                  <div class="dealerBox dealer4 six columns">
+                        <h3>Sunny Cycles</h3>
+                        <p>
+                              D-405, Palam Extension, Ramphal Chowk, Dwarka Sector 7,
+                              Delhi - 110075 
+                              +(91)-11- 39544810
+                        </p>
+                  </div>
+            </div>
+      </div>
 </div>
 
 
@@ -204,11 +265,27 @@
       <div class="contactModal">
             <div class="closeContact">×</div>
             <div class="contactText"><p>Blah blah blah black sheep</p></div>
-            <form action="#" id="contactForm" method="post">
+      <form action="#" id="contactForm" method="post">
                   <input type="text" id="name" name="name" placeholder="Name" value=""><br>
                   <input type="email" id="email" name="email" placeholder="Email" value=""><br>
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="submit">                                                         <!--change this-->
             </form>
+            <div class="contactThanks">
+                  <h3>Thank You</h3>
+                  <p>We will get right back to you..</p>
+            </div>
+      </div>
+</div>
+
+
+<!-- Newsletter Modal Window -->
+
+<div class="overlayNews">
+      <div class="newsModal">
+            <div class="closeNews">×</div>
+            <h2 class="newsHeader">Thank You</h2>
+            <div class="newsText"><p>Blah blah blah black sheep</p></div>
+            <button type="button" name="button">Go Back</button>
       </div>
 </div>
 
