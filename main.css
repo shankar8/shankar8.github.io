@@ -247,13 +247,14 @@ Feature section
     width:100%;
     height:100vh;
     background: lightblue;
-    padding: 50px 30px;
+    /*padding: 50px 30px;*/
     position:relative;
 }
 
 .featureTextMain,.featureTextOne,.featureTextTwo,.featureTextThree,.featureTextFour{
     font-size: 18px;
     position:absolute;
+    padding: 30px;
     top:0;
     opacity:0;
     transition: all 0.3s ease-in-out;
@@ -327,6 +328,8 @@ Contact Section
     display: block;
     width: 100%;
     height:50vh;
+    padding: 20px;
+    text-align: center;
 }
 
 .contactOne{
@@ -345,6 +348,9 @@ Contact Section
     background: maroon;
 }
 
+div.newsButton, div.dealerButton, div.contactButton {
+      padding: 0px;
+}
 
 
 
