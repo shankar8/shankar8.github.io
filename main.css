@@ -1,4 +1,15 @@
-/* xyoyx css*/
+/*------------------------------------------------------------------------------
+Fonts Used
+------------------------------------------------------------------------------*/
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
+
 
 /*------------------------------------------------------------------------------
 Skeleton mod
@@ -95,7 +106,7 @@ Navigation/Menu Modal window Section
 
 .overlayNav{
       position:fixed;
-      background: green;
+      background: rgba(100, 75, 209,0.7);
       top:0;
       left:0;
       right:0;
@@ -118,14 +129,38 @@ Navigation/Menu Modal window Section
       margin-top:150px;
       max-width:600px;
       max-height: 500px;
-      background: skyblue;
+      background: white;
       position:relative;
       transform: translateY(-30px);
       transition: all 0.3s ease-in-out;
+      box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.5);
 }
+
+
+#nav ul {
+  list-style: none;
+  padding: 20px 0px;
+ }
+
+#nav ul li{
+      padding: 10px 0px;
+}
+
+#nav ul li a{
+      text-decoration: none;
+      color:rgba(100, 75, 209, 0.8);
+      font-size: 1.5em;
+      font-family: 'Montserrat', sans-serif;
+      /*font-family: 'Open Sans', sans-serif;*/
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+}
+
 
 #nav.showNav{
       transform: translateY(0px);
+
 }
 
 .closeNav{
@@ -133,6 +168,7 @@ Navigation/Menu Modal window Section
       top:-35px;
       right:-20px;
       font-size:2em;
+      color: white;
       cursor: pointer;
 }
 
@@ -204,8 +240,18 @@ About Us  section
 	overflow: hidden;
 }
 
+.introTextMain h3{
+      font-family: 'Montserrat', sans-serif;
+      /*font-family: 'Open Sans', sans-serif;*/
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
+
+}
+
 .introTextMain p{
-	font-size: 24px;
+      font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 }
 
 .introTextMain.isShowing{
@@ -267,54 +313,67 @@ Feature section
 }
 
 .featureImageBox{
-    display: block;
-    width:100%;
-    height: 100vh;
-    background: brown;
-    overflow:hidden;
+      display: block;
+      width:100%;
+      height: 100vh;
+      background: brown;
+      overflow:hidden;
 }
 
 .featureBox{
-    display: block;
-    width:100%;
-    height:50vh;
-    }
+      display: block;
+      width:100%;
+      height:50vh;
+}
+
+.featureBox i{
+      display: none;
+      font-size: 3em;
+      color:white;
+      margin-left: 3%;
+}
+
+.featureOneColor.ion-ios-close-outline.showClose{
+      display:block;
+      z-index: 15;
+}
+
 
 .featureOneColor{
-  width:100%;
-  height:100%;
-  background: url("images/bikenature.jpg") -30px 0px no-repeat;
-  background-size: cover;
-  transform-origin: top left;
+      width:100%;
+      height:100%;
+      background: url("images/bikenature.jpg") -30px 0px no-repeat;
+      background-size: cover;
+      transform-origin: top left;
 }
 
 .featureTwoColor{
-  background: url("images/fatbikes.jpg") 0px 0px no-repeat;
-  background-size: cover;
-  width:100%;
-  height:110%;
-  transform-origin: top right;
+      background: url("images/fatbikes.jpg") 0px 0px no-repeat;
+      background-size: cover;
+      width:100%;
+      height:110%;
+      transform-origin: top right;
 }
 
 .featureThreeColor{
-  background: url("images/climb.jpg") 0px 0px no-repeat;
-  background-size: cover;
-  width:100%;
-  height:100%;
-  transform-origin: bottom left;
+      background: url("images/climb.jpg") 0px 0px no-repeat;
+      background-size: cover;
+      width:100%;
+      height:100%;
+      transform-origin: bottom left;
 }
 
 .featureFourColor{
-  background: url("images/bluebike.jpg") -30px 0px no-repeat;
-  background-size: cover;
-  width:100%;
-  height:100%;
-  transform-origin: bottom right;
+      background: url("images/bluebike.jpg") -30px 0px no-repeat;
+      background-size: cover;
+      width:100%;
+      height:100%;
+      transform-origin: bottom right;
 }
 
 .featureOneColor.scale,.featureTwoColor.scale,
 .featureThreeColor.scale,.featureFourColor.scale{
-  transform:scale(2.0,2.0);
+      transform:scale(2.0,2.0);
 }
 
 
@@ -327,30 +386,37 @@ Contact Section
 .contactBox{
     display: block;
     width: 100%;
-    height:50vh;
-    padding: 20px;
+    height:25vw;
+    padding: 20px 50px;
     text-align: center;
+    border-left: 0.1px solid #555;
 }
 
 .contactOne{
-    background: grey;
+    background: teal;
 }
 
 .contactTwo{
-    background: magenta;
+    background: teal;
 }
 
 .contactThree{
-    background: cyan;
+    background: teal;
 }
 
 .contactFour{
-    background: maroon;
+    background: teal;
 }
 
 div.newsButton, div.dealerButton, div.contactButton {
       padding: 0px;
 }
+
+
+.contactSection h3{
+      font-size: 1.5em;
+}
+
 
 
 
@@ -369,11 +435,29 @@ Contact Two Section
 
 
 .newsButton{
-      font-size: 3em;
-      color: #333;
-      padding: 30px;
+      font-size: 2.5em;
+      color: white;
       cursor: pointer;
+      border: 1px solid white;
+      background: transparent;
+      padding: 0px;
+      line-height: 0px;
+      width: 60px;
+      margin: 0 auto;
+
 }
+
+
+
+
+.contactTwo input{
+      border: 1px solid white;
+      background: transparent;
+      border-radius: 0px;
+      margin-bottom: 10px;
+}
+
+
 
 
 
@@ -386,10 +470,17 @@ Contact Three Section
 
 
 .dealerButton{
-      font-size: 3em;
-      color: #333;
+      font-size: 2.5em;
+      color: white;
       padding: 30px;
       cursor: pointer;
+      border: 1px solid white;
+      background: transparent;
+      border-radius: 50%;
+      width:60px;
+      height:60px;
+      margin: 0 auto;
+      line-height: 1.7em;
 }
 
 
@@ -406,10 +497,17 @@ Contact Four Section
 
 /*contact button takes you to contact form */
 .contactButton{
-      font-size: 2em;
-      color: pink;
+      font-size: 2.1em;
+      color: white;
       padding: 30px;
       cursor: pointer;
+      border: 1px solid white;
+      background: transparent;
+      border-radius: 50%;
+      width:60px;
+      height:60px;
+      margin: 0 auto;
+      line-height: 1.9em;
 }
 
 
@@ -501,7 +599,6 @@ Social Media section
 
 
 
-
 /*------------------------------------------------------------------------------------
 Contact Modal section
 ------------------------------------------------------------------------------------*/
@@ -566,7 +663,20 @@ Footer section
     height:350px;
     background: #202020;
     color:white;
+    text-align: center;
+    padding: 50px;
+    color: #888;
 }
+.footerInfo li{
+      display: inline-block;
+      padding: 10px 20px;
+}
+
+.footerInfo li a{
+      text-decoration: none;
+      color: #888;
+}
+
 
 /*------------------------------------------------------------------------------------
 Scroll to Top Button
